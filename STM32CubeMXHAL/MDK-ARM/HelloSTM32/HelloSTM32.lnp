@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"hellostm32\startup_stm32f103xb.o"
+"hellostm32\gpio_stm32f10x.o"
+"hellostm32\main.o"
+"hellostm32\stm32f1xx_it.o"
+"hellostm32\stm32f1xx_hal_msp.o"
+"hellostm32\stm32f1xx_hal_gpio_ex.o"
+"hellostm32\stm32f1xx_hal_tim.o"
+"hellostm32\stm32f1xx_hal_tim_ex.o"
+"hellostm32\stm32f1xx_hal.o"
+"hellostm32\stm32f1xx_hal_rcc.o"
+"hellostm32\stm32f1xx_hal_rcc_ex.o"
+"hellostm32\stm32f1xx_hal_gpio.o"
+"hellostm32\stm32f1xx_hal_dma.o"
+"hellostm32\stm32f1xx_hal_cortex.o"
+"hellostm32\stm32f1xx_hal_pwr.o"
+"hellostm32\stm32f1xx_hal_flash.o"
+"hellostm32\stm32f1xx_hal_flash_ex.o"
+"hellostm32\stm32f1xx_hal_exti.o"
+"hellostm32\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "HelloSTM32\HelloSTM32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HelloSTM32.map" -o HelloSTM32\HelloSTM32.axf
